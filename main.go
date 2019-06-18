@@ -8,12 +8,12 @@ import (
 )
 
 func main() {
-	man := struct {
+	type man struct {
 		Name string
 		Age  int
 	}
 
-	people := []man {
+	people := []man{
 		{"Gopher", 7},
 		{"Alice", 55},
 		{"Vera", 24},
