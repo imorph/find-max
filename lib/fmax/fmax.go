@@ -11,5 +11,5 @@ func Max(slice interface{}) interface{} {
 		//panic(&ValueError{Method: "Swapper", Kind: v.Kind()})
 		panic("AAAA!")
 	}
-	return
+	return interface{}
 }
