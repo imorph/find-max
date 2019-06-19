@@ -1,7 +1,6 @@
 package fmax
 
 import (
-	//"fmt"
 	"log"
 	"reflect"
 )
@@ -13,15 +12,11 @@ func Max(slice interface{}, comparator func(i, j int) bool) interface{} {
 		log.Println("object is not a slice, it is: ", v.Kind())
 		panic("AAAAA! I am in panic!")
 	}
-
 	var biggest int
 	for i := 1; i < v.Len(); i++ {
-		//fmt.Println("individual element of slice: ", v.Index(i))
 		if comparator(i-1, i) {
 			biggest = i
 		}
 	}
-	//fmt.Println("incominng slice is: ", v)
-	//fmt.Println("biggest element is: ", v.Index(biggest))
 	return v.Index(biggest)
 }
