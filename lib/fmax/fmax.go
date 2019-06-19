@@ -1,9 +1,9 @@
 package fmax
 
 import (
-	"reflect"
-	"log"
 	"fmt"
+	"log"
+	"reflect"
 )
 
 // Max returns max value of provided slice. Panics if provided interface is not slice.
@@ -14,7 +14,11 @@ func Max(slice interface{}, comparator func(i, j int) bool) interface{} {
 		panic("AAAAA! I am in panic!")
 	}
 
-    fmt.Println("incominng slice is: ", v)
+	for i := 0; i < v.Len(); i++ {
+		fmt.Println("individual element of slece: ", v.Index(i))
+	}
+
+	fmt.Println("incominng slice is: ", v)
 
 	return "mock"
 }
