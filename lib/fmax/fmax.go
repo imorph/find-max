@@ -14,11 +14,15 @@ func Max(slice interface{}, comparator func(i, j int) bool) interface{} {
 		panic("AAAAA! I am in panic!")
 	}
 
-	for i := 0; i < v.Len(); i++ {
-		fmt.Println("individual element of slece: ", v.Index(i))
+	var n, biggest int
+	for i := 1; i < v.Len(); i++ {
+		fmt.Println("individual element of slice: ", v.Index(i))
+		if comparator(i-1, i) {
+			n = i
+			biggest = n
+		}
 	}
-
 	fmt.Println("incominng slice is: ", v)
-
-	return "mock"
+	fmt.Println("biggest element is: ", v.Index(biggest))
+	return v.Index(biggest)
 }
