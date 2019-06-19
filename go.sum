@@ -8,3 +8,5 @@ github.com/imorph/find-max/lib/fmax v0.0.0-20190618061526-3d5f90c93654 h1:BxkppY
 github.com/imorph/find-max/lib/fmax v0.0.0-20190618061526-3d5f90c93654/go.mod h1:qBCYRTmRm6NJHxtRkppxyzeZ0M8G1pXEEq2PtYiwFik=
 github.com/imorph/find-max/lib/fmax v0.0.0-20190618061636-a8679f1cffe1 h1:KDPaFfe37GLQqALYE5hBHrH1otI5p8WJj80NUhhW+XI=
 github.com/imorph/find-max/lib/fmax v0.0.0-20190618061636-a8679f1cffe1/go.mod h1:qBCYRTmRm6NJHxtRkppxyzeZ0M8G1pXEEq2PtYiwFik=
+github.com/imorph/find-max/lib/fmax v0.0.0-20190619041926-0741e13f69f4 h1:1cPJd+md+3Hk7u9mcQyuWp5Q5xE4xJRupEvNaHeLUBs=
+github.com/imorph/find-max/lib/fmax v0.0.0-20190619041926-0741e13f69f4/go.mod h1:qBCYRTmRm6NJHxtRkppxyzeZ0M8G1pXEEq2PtYiwFik=
