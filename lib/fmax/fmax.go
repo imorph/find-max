@@ -1,7 +1,7 @@
 package fmax
 
 import (
-	"fmt"
+	//"fmt"
 	"log"
 	"reflect"
 )
@@ -14,15 +14,14 @@ func Max(slice interface{}, comparator func(i, j int) bool) interface{} {
 		panic("AAAAA! I am in panic!")
 	}
 
-	var n, biggest int
+	var biggest int
 	for i := 1; i < v.Len(); i++ {
-		fmt.Println("individual element of slice: ", v.Index(i))
+		//fmt.Println("individual element of slice: ", v.Index(i))
 		if comparator(i-1, i) {
-			n = i
-			biggest = n
+			biggest = i
 		}
 	}
-	fmt.Println("incominng slice is: ", v)
-	fmt.Println("biggest element is: ", v.Index(biggest))
+	//fmt.Println("incominng slice is: ", v)
+	//fmt.Println("biggest element is: ", v.Index(biggest))
 	return v.Index(biggest)
 }
